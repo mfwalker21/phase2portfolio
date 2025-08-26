@@ -20,7 +20,7 @@ export default function Contact() {
         method: "POST",
         body: data,
       });
-      navigate("/success"); 
+      navigate("/success"); // redirect after successful submission
     } catch (err) {
       alert("There was a problem submitting the form. Please try again.");
       console.error(err);
@@ -30,13 +30,13 @@ export default function Contact() {
   return (
     <section className="grid gap-10 md:grid-cols-2">
       <div>
-        <h1 className="text-2xl font-bold">Let’s Collab!</h1>
+        <h1 className="text-2xl font-bold">Let’s Collab</h1>
         <p>Email: <a href="mailto:myawalkerinfo@gmail.com">myawalkerinfo [@ gmail.com]</a></p>
       </div>
 
       <p className="flex items-center gap-2">
         <Linkedin size={25} className="text-primary-300" />
-        <a className="underline" href="https://www.linkedin.com/in/mya-walker" target="_blank" rel="noreferrer">
+        <a className="" href="https://www.linkedin.com/in/mya-walker" target="_blank" rel="noreferrer">
           linkedin.com/in/mya-walker
         </a>
       </p>
