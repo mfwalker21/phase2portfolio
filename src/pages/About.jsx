@@ -11,9 +11,10 @@ export default function About() {
 
       <h2 className="text-2xl font-semibold mt-6 animate-fade-in-left text-primary-300">Skills</h2>
       <ul className="list-disc list-inside mt-2 animate-fade-in-left text-primary-300">
-        <li><strong>Frontend:</strong> React, Tailwind CSS</li>
-        <li><strong>Backend:</strong> Node.js, Prisma, APIs</li>
+        <li><strong>Frontend:</strong> React, Tailwind CSS, Vite, Axios</li>
+        <li><strong>Backend:</strong> Node.js, Prisma, APIs, Supabase Auth, DB - Seeding w/ Faker.js</li>
         <li><strong>Design & UX:</strong> User-Centered Design, Wireframing, Figma, Prototyping</li>
+        <li><strong>Full-Stack Project Management:</strong> End-to-end development, Git/GitHub version control, Deployment to Netlify</li>
         <li><strong>Marketing & Content:</strong> Digital Marketing, Content Strategy/Creation, Data Analytics, Customer Experience</li>
       </ul>
 
