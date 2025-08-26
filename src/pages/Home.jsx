@@ -16,7 +16,7 @@ export default function Home() {
 
   return (
     <section className="grid items-center gap-10 md:grid-cols-2">
-      {/* Left Side */}
+     
       <div>
         <h1 className="text-4xl font-bold leading-tight sm:text-5xl">
           Welcome to my portfolio!
@@ -26,7 +26,7 @@ export default function Home() {
           problem-solving, I aspire to craft an experience with impact. Built with React, Vite, and Tailwind
         </p>
 
-        {/* Quote of the Day with simple fade-in animation */}
+        {/* fav quote */}
         <div
           className={`mt-6 p-4  transition-all duration-1000 ease-out
             ${quoteVisible ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-6'}
