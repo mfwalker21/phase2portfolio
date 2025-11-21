@@ -3,10 +3,46 @@ import ProjectCard from '../components/ProjectCard'
 export default function Projects() {
   return (
     <div className="space-y-16">
-      {/* collabs */}
+
+      {/* Latest Project */}
+      <section>
+        <h2 className="text-2xl font-bold">Latest Project</h2>
+        <p className="mt-2 text-gray-700">
+          A look at my capstone project built during The Knowledge House Innovation Fellowship —
+          a creative full-stack journaling and wellness platform featuring Supabase, OverType,
+          protected user flows, and expressive digital journaling tools.
+        </p>
+
+        {/* autoplay video */}
+        <div className="mt-6 w-full aspect-w-16 aspect-h-9 rounded-xl overflow-hidden shadow-md">
+          <iframe
+            src="https://www.youtube.com/embed/N-VLuylr55A?autoplay=1&mute=1&controls=1&loop=1&playlist=N-VLuylr55A"
+            title="TKH Capstone Demo"
+            className="w-full h-full"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          ></iframe>
+        </div>
+
+        {/* links */}
+        <div className="mt-4">
+          <a
+            href="https://github.com/joselevelsup/tkh-capstone-2025"
+            target="_blank"
+            rel="noreferrer"
+            className="btn-outline"
+          >
+            View Capstone GitHub Repo
+          </a>
+        </div>
+      </section>
+
+      {/* Collaborative Projects */}
       <section>
         <h2 className="text-2xl font-bold">Collaborative Projects</h2>
-        <p className="mt-2 text-gray-700">Projects built with teammates during coursework and group work.</p>
+        <p className="mt-2 text-gray-700">
+          Projects built with teammates during coursework and group work.
+        </p>
         <div className="mt-6 grid gap-6 sm:grid-cols-2">
           <ProjectCard
             title="EcoBridge"
@@ -69,6 +105,7 @@ export default function Projects() {
           />
         </div>
       </section>
+
     </div>
   )
 }

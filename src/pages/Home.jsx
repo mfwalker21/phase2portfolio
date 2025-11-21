@@ -1,13 +1,13 @@
 import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
+import { MapPin } from "lucide-react"
 import headshot from '../assets/headshot.jpg'
 
 export default function Home() {
   const [quoteVisible, setQuoteVisible] = useState(false)
 
   useEffect(() => {
-    // Trigger animation after component mounts
-    const timer = setTimeout(() => setQuoteVisible(true), 500) // delay 0.5s
+    const timer = setTimeout(() => setQuoteVisible(true), 500)
     return () => clearTimeout(timer)
   }, [])
 
@@ -16,19 +16,24 @@ export default function Home() {
 
   return (
     <section className="grid items-center gap-10 md:grid-cols-2">
-     
+      
       <div>
         <h1 className="text-4xl font-bold leading-tight sm:text-5xl">
           Welcome to my portfolio!
         </h1>
         <p className="mt-4 text-lg text-gray-700">
-          With a foundation in project management, creative design, and
-          problem-solving, I aspire to craft an experience with impact. Built with React, Vite, and Tailwind
+          Grounded in operations, project management, and design, I craft purposeful experiences that solve problems and inspire. 
         </p>
+
+        {/* location */}
+        <div className="flex items-center gap-2 mt-3 text-gray-700">
+          <MapPin size={22} className="text-purple-600" />
+          <span>Atlanta, GA — <strong>Open to relocation</strong></span>
+        </div>
 
         {/* fav quote */}
         <div
-          className={`mt-6 p-4  transition-all duration-1000 ease-out
+          className={`mt-6 p-4 transition-all duration-1000 ease-out
             ${quoteVisible ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-6'}
           `}
         >
@@ -36,7 +41,7 @@ export default function Home() {
           <p className="text-right text-gray-500 mt-2">— {author}</p>
         </div>
 
-        {/* btns - projects, contact */}
+        {/* btns */}
         <div className="mt-6 flex gap-3">
           <Link to="/projects" className="btn-outline">
             Projects
@@ -47,7 +52,7 @@ export default function Home() {
         </div>
       </div>
 
-      {/* my headshot */}
+      {/* headshot */}
       <div className="order-first md:order-last flex justify-center">
         <img
           src={headshot}
