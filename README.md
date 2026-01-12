@@ -1,6 +1,6 @@
 ## Learn More about me! 
 
-### Deployment link: [https://portfoliophase2.netlify.app/](https://myawportfolio.netlify.app/)
+### Deployment link: (https://myawportfolio.netlify.app/)
 
 Hi! I'm Mya. With a foundation in project management, creative design, and operations. I aspire to craft an experience with impact. Built with React, Vite, and Tailwind
 
